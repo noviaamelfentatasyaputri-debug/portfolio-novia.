@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novia Amel Fenta Tasya Putri,S.Bns. - Professional Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        panelLight: '#F8FAFC',
+                        panelWhite: '#FFFFFF',
+                        panelMidGray: '#E2E8F0',
+                        panelDarkGray: '#CBD5E1',
+                        deepBlue: '#102A43',
+                        deepBlueDark: '#0B1D30',
+                        accentBlue: '#2B83AA'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts Inter & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F1F5F9;
+            color: #1E293B;
+            overflow-x: hidden;
+        }
+        /* Panel Textures and Backgrounds as requested */
+        .panel-1 {
+            background-color: #FFFFFF;
+        }
+        .panel-2 {
+            background-color: #E2E8F0;
+            background-image: radial-gradient(#94A3B8 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .panel-3 {
+            background-color: #F8FAFC;
+            background-image: linear-gradient(to right, rgba(148, 163, 184, 0.15) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(148, 163, 184, 0.15) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+        .panel-4 {
+            background-color: #102A43;
+            color: #FFFFFF;
+        }
+        .panel-5 {
+            background-color: #0B1D30;
+            color: #FFFFFF;
+        }
+        .panel-6 {
+            background-color: #F8FAFC;
+            background-image: radial-gradient(rgba(43, 131, 170, 0.08) 2px, transparent 2px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-[#F1F5F9] text-[#1E293B] antialiased selection:bg-[#2B83AA] selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+            <a href="#cover" class="text-sm sm:text-xl font-bold tracking-tight text-[#102A43] flex items-center gap-2.5 truncate max-w-[200px] sm:max-w-none">
+                <img src="https://cdn.corenexis.com/f/666ZhLZH1x5.png" alt="Logo" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover border border-[#2B83AA] flex-shrink-0" onerror="this.src='https://placehold.co/40x40/102A43/FFFFFF?text=NA'">
+                <span class="truncate">PORTFOLIO</span>
+            </a>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center space-x-4 xl:space-x-5 text-sm font-medium">
+                <a href="#cover" class="text-slate-600 hover:text-[#2B83AA] transition-colors">Cover</a>
+                <a href="#about" class="text-slate-600 hover:text-[#2B83AA] transition-colors">About</a>
+                <a href="#education" class="text-slate-600 hover:text-[#2B83AA] transition-colors">Education</a>
+                <a href="#organizations" class="text-slate-600 hover:text-[#2B83AA] transition-colors">Organizations</a>
+                <a href="#experience" class="text-slate-600 hover:text-[#2B83AA] transition-colors">Experience</a>
+                <a href="#skills" class="text-slate-600 hover:text-[#2B83AA] transition-colors">Skills</a>
+                <a href="#tools" class="text-slate-600 hover:text-[#2B83AA] transition-colors">Tools</a>
+                <a href="#certifications" class="text-slate-600 hover:text-[#2B83AA] transition-colors">Certifications</a>
+                <a href="#contact" class="px-4 py-2 bg-[#2B83AA] text-white rounded-lg hover:bg-[#236b8c] transition-all shadow-sm font-semibold">Let's Connect</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="lg:hidden text-slate-700 focus:outline-none p-2.5 text-xl" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-5 space-y-4 shadow-xl max-h-[85vh] overflow-y-auto">
+            <a href="#cover" class="block text-slate-700 hover:text-[#2B83AA] font-medium py-1.5 text-base">Cover</a>
+            <a href="#about" class="block text-slate-700 hover:text-[#2B83AA] font-medium py-1.5 text-base">About</a>
+            <a href="#education" class="block text-slate-700 hover:text-[#2B83AA] font-medium py-1.5 text-base">Education</a>
+            <a href="#organizations" class="block text-slate-700 hover:text-[#2B83AA] font-medium py-1.5 text-base">Organizations</a>
+            <a href="#experience" class="block text-slate-700 hover:text-[#2B83AA] font-medium py-1.5 text-base">Experience</a>
+            <a href="#skills" class="block text-slate-700 hover:text-[#2B83AA] font-medium py-1.5 text-base">Skills</a>
+            <a href="#tools" class="block text-slate-700 hover:text-[#2B83AA] font-medium py-1.5 text-base">Tools</a>
+            <a href="#certifications" class="block text-slate-700 hover:text-[#2B83AA] font-medium py-1.5 text-base">Certifications</a>
+            <div class="pt-2">
+                <a href="#contact" class="block text-center w-full px-4 py-3 bg-[#2B83AA] text-white rounded-xl hover:bg-[#236b8c] transition-all font-semibold shadow-sm">Let's Connect</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- INTEGRATED LUXURY COVER PAGE SECTION -->
+        <section id="cover" class="min-h-[calc(100vh-80px)] py-12 sm:py-20 px-4 sm:px-6 flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-[#FFFFFF] via-[#F1F5F9] via-[#E2E8F0] to-[#CBD5E1]">
+            <!-- Geometric & Gradient Dot Pattern overlay -->
+            <div class="absolute inset-0 bg-[radial-gradient(rgba(44,83,100,0.15)_1.5px,transparent_1.5px),linear-gradient(to_right,rgba(203,213,225,0.3)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none z-0"></div>
+
+            <div class="max-w-6xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center min-h-[75vh] bg-gradient-to-br from-white/95 to-slate-50/85 backdrop-blur-[24px] border-2 border-transparent [border-image:linear-gradient(135deg,rgba(255,255,255,1),rgba(44,83,100,0.2))_1] shadow-[0_30px_60px_-15px_rgba(15,32,39,0.18),inset_0_1px_0_0_rgba(255,255,255,0.9)] rounded-[2.5rem] p-6 sm:p-12 lg:p-16 relative z-10">
+                
+                <!-- Ambient Multi-color Gradient Glows -->
+                <div class="absolute -left-32 -top-32 w-96 h-96 rounded-full bg-gradient-to-br from-[#2C5364]/20 to-[#3B82F6]/15 blur-[100px] pointer-events-none"></div>
+                <div class="absolute -right-32 -bottom-32 w-96 h-96 rounded-full bg-gradient-to-tl from-slate-400/30 to-blue-200/40 blur-[100px] pointer-events-none"></div>
+
+                <!-- Left Column: Seated Full-Body Portrait -->
+                <div class="lg:col-span-5 flex justify-center z-10 relative order-2 lg:order-1">
+                    <div class="relative w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[400px] aspect-[3/4] flex items-center justify-center group">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-[#2C5364]/20 via-[#3B82F6]/15 to-slate-300/30 rounded-3xl filter blur-2xl transform group-hover:scale-105 transition-transform duration-700"></div>
+                        <img src="https://cdn.corenexis.com/f/666ZhLZH1x5.png" class="w-full h-full object-contain filter drop-shadow-2xl bg-transparent transition-transform duration-700 group-hover:scale-105 relative z-10" style="mix-blend-mode: multiply;" onerror="this.src='https://placehold.co/400x600/0F2027/FFFFFF?text=Novia+Amel'">
+                    </div>
+                </div>
+
+                <!-- Right Column: Title & Name -->
+                <div class="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left z-10 order-1 lg:order-2">
+                    <div class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-gradient-to-br from-white/90 to-slate-200/90 border border-slate-300 shadow-sm text-xs font-bold bg-gradient-to-r from-[#1E3A8A] via-[#2B83AA] to-[#06B6D4] bg-clip-text text-transparent tracking-[0.2em] uppercase mx-auto lg:mx-0">
+                        <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-[#2C5364] to-[#3B82F6] animate-pulse"></span>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-[#0F2027] leading-[1.08]">
+                            DIGITAL <br><span class="bg-gradient-to-r from-[#0F2027] via-[#203A43] via-[#2C5364] to-[#3B82F6] bg-clip-text text-transparent">PORTFOLIO</span>
+                        </h1>
+                        <div class="w-24 h-1.5 bg-gradient-to-r from-[#0F2027] via-[#2C5364] to-[#3B82F6] rounded-full mx-auto lg:mx-0 shadow-sm"></div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h2 class="text-xl sm:text-2xl font-extrabold text-[#0F2027] tracking-wide">
+                            Novia Amel Fenta Tasya Putri, S.Bns.
+                        </h2>
+                        <p class="text-xs sm:text-sm font-bold bg-gradient-to-r from-[#1E3A8A] to-[#06B6D4] bg-clip-text text-transparent tracking-wide uppercase">
+                            Entrepreneurship Business Creation Graduate | Marketing | Business Development | Management Trainee| Market Research | Management Development Program
+                        </p>
+                    </div>
+
+                    <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                        <a href="#about" class="px-6 py-3 bg-[#2B83AA] text-white font-medium rounded-xl hover:bg-[#236b8c] transition-all shadow-md flex items-center gap-2 font-semibold">
+                            Explore Portfolio <i class="fa-solid fa-arrow-down text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PANEL 1: ABOUT ME -->
+        <section id="about" class="panel-1 min-h-[calc(100vh-80px)] py-12 sm:py-20 px-4 sm:px-6 flex items-center relative border-b border-slate-200">
+            <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                <!-- Left: Clean Area for Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left order-2 lg:order-1">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-xs font-semibold text-[#102A43] tracking-wide shadow-sm mx-auto lg:mx-0">
+                        <span class="w-2 h-2 rounded-full bg-[#2B83AA] animate-pulse"></span>
+                        BINUS University Graduate
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#102A43] leading-tight">
+                        Novia Amel Fenta Tasya Putri, S.Bns.
+                    </h1>
+                    
+                    <p class="text-base sm:text-xl font-semibold text-[#2B83AA]"
+                    </p>
+
+                    <p class="text-slate-600 text-sm sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                       Entrepreneurship Business Creation graduate from BINUS University with hands-on business experience through the Enrichment Program, focusing on business development, marketing strategy, and business operations. Skilled in digital marketing, business planning, market research, and promotional campaign execution. Demonstrates strong analytical thinking, communication, teamwork, and adaptability to support business objectives. Committed to continuous learning and professional growth, with a career interest in Marketing, Business Development, Management Trainee programs, or Market Research.
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#education" class="w-full sm:w-auto text-center px-6 py-3 bg-[#2B83AA] text-white font-medium rounded-xl hover:bg-[#236b8c] transition-all shadow-md flex items-center justify-center gap-2 font-semibold">
+                            View Education Timeline <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto text-center px-6 py-3 bg-slate-100 text-[#102A43] border border-slate-300 font-medium rounded-xl hover:bg-slate-200 transition-all shadow-sm font-semibold">
+                            Let's Connect
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Transparent Portrait without frame or background, pop-up on scroll -->
+                <div class="lg:col-span-5 flex flex-col items-center justify-center space-y-6 order-1 lg:order-2">
+                    <div id="profile-popup-card" class="w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[380px] h-auto max-h-[420px] flex items-center justify-center relative transform scale-50 opacity-0 transition-all duration-1000 ease-out overflow-hidden">
+                        <img src="https://cdn.corenexis.com/f/28HUYXiQ8Er.png" class="w-full h-auto max-h-[420px] object-contain filter drop-shadow-2xl bg-transparent mix-blend-multiply" onerror="this.src='https://placehold.co/400x500/102A43/F8FAFC?text=Novia+Amel'" alt="Novia Amel">
+                    </div>
+
+                    <!-- Social Icons Below Photo -->
+                    <div class="flex items-center gap-4 text-slate-700 text-lg">
+                        <a href="https://www.linkedin.com/in/novia-amel/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-100 border border-slate-300 flex items-center justify-center hover:bg-[#2B83AA] hover:text-white transition-all shadow-sm" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in text-sm"></i>
+                        </a>
+                        <a href="https://www.instagram.com/amelfenta/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-100 border border-slate-300 flex items-center justify-center hover:bg-[#2B83AA] hover:text-white transition-all shadow-sm" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram text-sm"></i>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&to=noviaamelfentatasyaputri%40gmail.com" class="w-10 h-10 rounded-full bg-slate-100 border border-slate-300 flex items-center justify-center hover:bg-[#2B83AA] hover:text-white transition-all shadow-sm" aria-label="Email">
+                            <i class="fa-solid fa-envelope text-sm"></i>
+                        </a>
+                        <a href="https://wa.me/628885779697" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-100 border border-slate-300 flex items-center justify-center hover:bg-[#2B83AA] hover:text-white transition-all shadow-sm" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PANEL 2: PENDIDIKAN (Education Timeline with halftone dots) -->
+        <section id="education" class="panel-2 py-16 sm:py-24 px-4 sm:px-6 border-b border-slate-300">
+            <div class="max-w-5xl mx-auto space-y-12 sm:space-y-16">
+                <div class="text-center space-y-3 max-w-2xl mx-auto">
+                    <h2 class="text-xs uppercase tracking-widest text-[#2B83AA] font-bold">Academic Journey</h2>
+                    <h3 class="text-2xl sm:text-4xl font-extrabold text-[#102A43]">EDUCATION </h3>
+                </div>
+
+                <!-- Vertical Timeline Container -->
+                <div class="relative pl-6 sm:pl-12 border-l-2 border-[#2B83AA] space-y-12 sm:space-y-16">
+
+                    <!-- 1. SMA Islam Almaarif Singosari -->
+                    <div class="relative edu-card-item opacity-0 transform translate-y-6 transition-all duration-700 ease-out">
+                        <div class="absolute -left-[31px] sm:-left-[55px] top-6 w-5 h-5 rounded-full bg-[#2B83AA] border-4 border-[#E2E8F0] shadow-md"></div>
+                        
+                        <div class="bg-white rounded-3xl p-5 sm:p-8 border border-slate-200 shadow-xl space-y-6 hover:border-[#2B83AA] transition-all">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center p-2 flex-shrink-0 shadow-sm">
+                                        <img src="https://th.bing.com/th/id/OIP.lVm_g2DcEVuka6mZevteNAHaHZ?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="SMA Logo" class="w-full h-full object-contain" onerror="this.src='https://placehold.co/100x100/102A43/FFFFFF?text=SMA'">
+                                    </div>
+                                    <div>
+                                        <span class="text-[11px] sm:text-xs font-bold text-[#2B83AA] tracking-wide uppercase">July 2019 – July 2022</span>
+                                        <h4 class="text-lg sm:text-xl font-extrabold text-[#102A43]">SMA Islam Almaarif Singosari</h4>
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="px-3 py-1 bg-slate-100 text-[#102A43] text-xs font-semibold rounded-full border border-slate-200">
+                                        Major: Science / IPA
+                                    </span>
+                                    <span class="px-3 py-1 bg-[#2B83AA]/10 text-[#2B83AA] text-xs font-bold rounded-full border border-[#2B83AA]/20">
+                                        Avg Grade: 87.27
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="space-y-3">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-slate-400">Educational Highlights</h5>
+                                <ul class="space-y-2 text-sm text-slate-600">
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-check text-[#2B83AA] mt-1 text-xs flex-shrink-0"></i>
+                                        <span>Graduated with an average score of 87.27/100.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-check text-[#2B83AA] mt-1 text-xs flex-shrink-0"></i>
+                                        <span>Selected as an Eligible Student for university admission selection.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-slate-50/80 p-4 rounded-2xl border border-slate-200">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-red-50 text-red-600 flex items-center justify-center font-bold text-base shadow-sm flex-shrink-0">
+                                        <i class="fa-solid fa-file-pdf"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-xs sm:text-sm text-[#102A43]">Academic Document — SMA Islam Almaarif Singosari</p>
+                                        <p class="text-[11px] text-slate-500">Academic Record / Supporting Document</p>
+                                    </div>
+                                </div>
+                                <div class="w-full sm:w-auto">
+                                    <button onclick="openPdfModal('SMA Islam Almaarif Singosari Academic Record', 'https://drive.google.com/file/d/1KuqwwgtcrQYrNUcfWEM4T_SExTyETFHh/view?usp=sharing')" class="w-full sm:w-auto px-4 py-2.5 bg-[#2B83AA] text-white text-xs font-bold rounded-xl hover:bg-[#236b8c] transition-all shadow-sm flex items-center justify-center gap-2">
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> View Document
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Institut Teknologi Sepuluh Nopember (ITS) -->
+                    <div class="relative edu-card-item opacity-0 transform translate-y-6 transition-all duration-700 delay-200 ease-out">
+                        <div class="absolute -left-[31px] sm:-left-[55px] top-6 w-5 h-5 rounded-full bg-[#2B83AA] border-4 border-[#E2E8F0] shadow-md"></div>
+                        
+                        <div class="bg-white rounded-3xl p-5 sm:p-8 border border-slate-200 shadow-xl space-y-6 hover:border-[#2B83AA] transition-all">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center p-2 flex-shrink-0 shadow-sm">
+                                        <img src="https://tse1.mm.bing.net/th/id/OIP.FgvEBXnKfDC1yltDsFjEXAHaGa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="ITS Logo" class="w-full h-full object-contain" onerror="this.src='https://placehold.co/100x100/102A43/FFFFFF?text=ITS'">
+                                    </div>
+                                    <div>
+                                        <span class="text-[11px] sm:text-xs font-bold text-[#2B83AA] tracking-wide uppercase">July 2019 – July 2022</span>
+                                        <h4 class="text-lg sm:text-xl font-extrabold text-[#102A43]">Institut Teknologi Sepuluh Nopember (ITS)</h4>
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="px-3 py-1 bg-slate-100 text-[#102A43] text-xs font-semibold rounded-full border border-slate-200">
+                                        Diploma in Desain Grafis (D2)
+                                    </span>
+                                    <span class="px-3 py-1 bg-[#2B83AA]/10 text-[#2B83AA] text-xs font-bold rounded-full border border-[#2B83AA]/20">
+                                        GPA: 3.80 / 4.00 (Magna Cum Laude)
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="space-y-3">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-slate-400">Educational Highlights</h5>
+                                <ul class="space-y-2 text-sm text-slate-600">
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-check text-[#2B83AA] mt-1 text-xs flex-shrink-0"></i>
+                                        <span>Graduated with a GPA of 3.80/4.00, achieving Magna Cum Laude honors.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-check text-[#2B83AA] mt-1 text-xs flex-shrink-0"></i>
+                                        <span>Proficient in Microsoft Office.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-check text-[#2B83AA] mt-1 text-xs flex-shrink-0"></i>
+                                        <span>Familiar with the fundamental principles and use of graphic design tools.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-slate-50/80 p-4 rounded-2xl border border-slate-200">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-red-50 text-red-600 flex items-center justify-center font-bold text-base shadow-sm flex-shrink-0">
+                                        <i class="fa-solid fa-file-pdf"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-xs sm:text-sm text-[#102A43]">Academic Document — ITS</p>
+                                        <p class="text-[11px] text-slate-500">Academic Record / Supporting Document</p>
+                                    </div>
+                                </div>
+                                <div class="w-full sm:w-auto">
+                                    <button onclick="openPdfModal('Institut Teknologi Sepuluh Nopember Academic Record', 'https://drive.google.com/file/d/1gLbEHfgVK_QrU6luUoba2sR3HAIzBIDH/view?usp=sharing')" class="w-full sm:w-auto px-4 py-2.5 bg-[#2B83AA] text-white text-xs font-bold rounded-xl hover:bg-[#236b8c] transition-all shadow-sm flex items-center justify-center gap-2">
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> View Document
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Universitas Bina Nusantara (BINUS University) S1 -->
+                    <div class="relative edu-card-item opacity-0 transform translate-y-6 transition-all duration-700 delay-400 ease-out">
+                        <div class="absolute -left-[31px] sm:-left-[55px] top-6 w-5 h-5 rounded-full bg-[#2B83AA] border-4 border-[#E2E8F0] shadow-md"></div>
+                        
+                        <div class="bg-white rounded-3xl p-5 sm:p-8 border border-slate-200 shadow-xl space-y-6 hover:border-[#2B83AA] transition-all">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center p-2 flex-shrink-0 shadow-sm">
+                                        <img src="https://th.bing.com/th/id/OIP.la0SlKa3evjdEoBWcqUBOwHaEK?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="BINUS Logo" class="w-full h-full object-contain" onerror="this.src='https://placehold.co/100x100/102A43/FFFFFF?text=BINUS'">
+                                    </div>
+                                    <div>
+                                        <span class="text-[11px] sm:text-xs font-bold text-[#2B83AA] tracking-wide uppercase">September 2022 – September 2026</span>
+                                        <h4 class="text-lg sm:text-xl font-extrabold text-[#102A43]">Universitas Bina Nusantara (BINUS University)</h4>
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="px-3 py-1 bg-slate-100 text-[#102A43] text-xs font-semibold rounded-full border border-slate-200">
+                                        Bachelor's Degree in Entrepreneurship (S1)
+                                    </span>
+                                    <span class="px-3 py-1 bg-[#2B83AA]/10 text-[#2B83AA] text-xs font-bold rounded-full border border-[#2B83AA]/20">
+                                        GPA: 3.69 / 4.00 (Cum Laude)
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="space-y-3">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-slate-400">Educational Highlights</h5>
+                                <ul class="space-y-2 text-sm text-slate-600">
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-check text-[#2B83AA] mt-1 text-xs flex-shrink-0"></i>
+                                        <span>Graduated with a GPA of 3.69/4.00, achieving Cum Laude honors.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-check text-[#2B83AA] mt-1 text-xs flex-shrink-0"></i>
+                                        <span>Focused on Entrepreneurship, Business Development, Marketing, and Business Planning.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-check text-[#2B83AA] mt-1 text-xs flex-shrink-0"></i>
+                                        <span>Actively participated in BINUS Basketball and volunteer activities supporting MSMEs.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-slate-50/80 p-4 rounded-2xl border border-slate-200">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-red-50 text-red-600 flex items-center justify-center font-bold text-base shadow-sm flex-shrink-0">
+                                        <i class="fa-solid fa-file-pdf"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-xs sm:text-sm text-[#102A43]">Academic Document — BINUS University</p>
+                                        <p class="text-[11px] text-slate-500">Academic Record / Supporting Document</p>
+                                    </div>
+                                </div>
+                                <div class="w-full sm:w-auto">
+                                    <button onclick="openPdfModal('BINUS University Academic Record', 'https://drive.google.com/file/d/1fGw4N9KQbdnCGsdKZlRRI97GXi_T0mYk/view?usp=sharing')" class="w-full sm:w-auto px-4 py-2.5 bg-[#2B83AA] text-white text-xs font-bold rounded-xl hover:bg-[#236b8c] transition-all shadow-sm flex items-center justify-center gap-2">
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> View Document
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PANEL 3: ORGANISASI (Geometric Grid Pattern) -->
+        <section id="organizations" class="panel-3 py-16 sm:py-20 px-4 sm:px-6 border-b border-slate-200">
+            <div class="max-w-7xl mx-auto space-y-12">
+                <div class="text-center space-y-3 max-w-2xl mx-auto">
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-[#102A43]">Organizational Experience</h2>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- 1. BINUS @Malang Basketball -->
+                    <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-md flex flex-col justify-between space-y-6 hover:shadow-xl transition-all">
+                        <div class="space-y-6">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center p-2 flex-shrink-0 shadow-sm">
+                                        <img src="https://media.licdn.com/dms/image/v2/C4E0BAQGUolPAV7Fr9w/company-logo_200_200/company-logo_200_200/0/1668144364541?e=2147483647&v=beta&t=iOEtPkpQJJY1YT4IHoi1hxuwQSjF91-G-P7zTUnzsXs" alt="Basketball Logo" class="w-full h-full object-contain" onerror="this.src='https://placehold.co/100x100/102A43/FFFFFF?text=Basketball'">
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg sm:text-xl font-extrabold text-[#102A43]">BINUS @Malang Basketball</h4>
+                                        <p class="text-xs font-semibold text-[#2B83AA] mt-0.5">Malang | Mar 2024 – Mar 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="px-3 py-1 bg-[#2B83AA]/10 text-[#2B83AA] text-xs font-bold rounded-full border border-[#2B83AA]/20 inline-block">
+                                    Coordinator of Relation and Finance
+                                </span>
+                            </div>
+
+                            <p class="text-sm text-slate-600 italic leading-relaxed bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                                “A student organization focused on developing students’ interests and talents in basketball.”
+                            </p>
+
+                            <div class="space-y-2">
+                                <p class="text-xs font-bold text-[#102A43] uppercase tracking-wider">Responsibility:</p>
+                                <ul class="text-xs text-slate-600 space-y-2">
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-check text-[#2B83AA] mt-0.5 text-xs flex-shrink-0"></i>
+                                        <span>Managed relationships and coordinated with relevant stakeholders.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-check text-[#2B83AA] mt-0.5 text-xs flex-shrink-0"></i>
+                                        <span>Managed and maintained records of the organization’s financial needs.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-check text-[#2B83AA] mt-0.5 text-xs flex-shrink-0"></i>
+                                        <span>Coordinated with members in organizing and executing organizational activities.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="space-y-3 pt-2">
+                                <p class="text-xs font-bold text-[#102A43] uppercase tracking-wider">Activity Documentation:</p>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                    <div onclick="openPhotoModal('FOTO BINUS BASKETBALL 1', 'https://pictureurl.com/api/storage/file?key=u%2Fanon%2F2c1814b7-951a-465f-96f3-379204dbbf99-IMG_1671.jpg')" class="w-full aspect-[4/3] bg-slate-100 rounded-2xl border border-slate-200 flex flex-col items-center justify-center p-2 sm:p-3 text-center cursor-pointer hover:border-[#2B83AA] hover:shadow-md transition-all group overflow-hidden">
+                                        <img src="https://pictureurl.com/api/storage/file?key=u%2Fanon%2F2c1814b7-951a-465f-96f3-379204dbbf99-IMG_1671.jpg" alt="BINUS Basketball 1" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform" onerror="this.src='https://placehold.co/600x400/102A43/FFFFFF?text=BINUS+Basketball+1'">
+                                        <span class="text-[10px] font-medium text-slate-500 mt-2 truncate w-full">[FOTO BINUS BASKETBALL 1]</span>
+                                    </div>
+                                    <div onclick="openPhotoModal('FOTO BINUS BASKETBALL 2', 'https://cdn.corenexis.com/f/lHyVSKc8M4n.jpg')" class="w-full aspect-[4/3] bg-slate-100 rounded-2xl border border-slate-200 flex flex-col items-center justify-center p-2 sm:p-3 text-center cursor-pointer hover:border-[#2B83AA] hover:shadow-md transition-all group overflow-hidden">
+                                        <img src="https://cdn.corenexis.com/f/lHyVSKc8M4n.jpg" alt="BINUS Basketball 2" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform" onerror="this.src='https://placehold.co/600x400/102A43/FFFFFF?text=BINUS+Basketball+2'">
+                                        <span class="text-[10px] font-medium text-slate-500 mt-2 truncate w-full">[FOTO BINUS BASKETBALL 2]</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. KreaTon -->
+                    <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-md flex flex-col justify-between space-y-6 hover:shadow-xl transition-all">
+                        <div class="space-y-6">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center p-2 flex-shrink-0 shadow-sm">
+                                        <img src="https://cdn.corenexis.com/f/S4mEcxape4p.jpeg" alt="KreaTon Logo" class="w-full h-full object-contain" onerror="this.src='https://placehold.co/100x100/102A43/FFFFFF?text=KreaTon'">
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg sm:text-xl font-extrabold text-[#102A43]">KreaTon</h4>
+                                        <p class="text-xs font-semibold text-[#2B83AA] mt-0.5">Malang | Jun 2025 – Nov 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="px-3 py-1 bg-[#2B83AA]/10 text-[#2B83AA] text-xs font-bold rounded-full border border-[#2B83AA]/20 inline-block">
+                                    Volunteer, SME Coordinator
+                                </span>
+                            </div>
+
+                            <p class="text-sm text-slate-600 italic leading-relaxed bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                                “A campus collaborative event featuring MSME mentoring, product exhibitions, and engaging basketball fun games.”
+                            </p>
+
+                            <div class="space-y-2">
+                                <p class="text-xs font-bold text-[#102A43] uppercase tracking-wider">Responsibility:</p>
+                                <ul class="text-xs text-slate-600 space-y-2">
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-check text-[#2B83AA] mt-0.5 text-xs flex-shrink-0"></i>
+                                        <span>Interacted directly with MSME owners regarding the use of social media.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-check text-[#2B83AA] mt-0.5 text-xs flex-shrink-0"></i>
+                                        <span>Ensured that mentoring materials aligned with the needs and objectives of the program.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-check text-[#2B83AA] mt-0.5 text-xs flex-shrink-0"></i>
+                                        <span>Coordinated and evaluated mentoring materials prior to the MSME mentoring activities.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="space-y-3 pt-2">
+                                <p class="text-xs font-bold text-[#102A43] uppercase tracking-wider">Activity Documentation:</p>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                    <div onclick="openPhotoModal('FOTO KREATON 1', 'https://pictureurl.com/api/storage/file?key=u%2Fanon%2Fa38eb90c-6745-46cd-aa4e-69b58194c91c-IMG_20261008_074830.png')" class="w-full aspect-[4/3] bg-slate-100 rounded-2xl border border-slate-200 flex flex-col items-center justify-center p-2 sm:p-3 text-center cursor-pointer hover:border-[#2B83AA] hover:shadow-md transition-all group overflow-hidden">
+                                        <img src="https://pictureurl.com/api/storage/file?key=u%2Fanon%2Fa38eb90c-6745-46cd-aa4e-69b58194c91c-IMG_20261008_074830.png" alt="KreaTon 1" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform" onerror="this.src='https://placehold.co/600x400/102A43/FFFFFF?text=KreaTon+1'">
+                                        <span class="text-[10px] font-medium text-slate-500 mt-2 truncate w-full">[FOTO KREATON 1]</span>
+                                    </div>
+                                    <div onclick="openPhotoModal('FOTO KREATON 2', 'https://pictureurl.com/api/storage/file?key=u%2Fanon%2Fc9379d01-397c-44ad-8c46-45fe8634c7f9-IMG_20261008_071750.jpg')" class="w-full aspect-[4/3] bg-slate-100 rounded-2xl border border-slate-200 flex flex-col items-center justify-center p-2 sm:p-3 text-center cursor-pointer hover:border-[#2B83AA] hover:shadow-md transition-all group overflow-hidden">
+                                        <img src="https://pictureurl.com/api/storage/file?key=u%2Fanon%2Fc9379d01-397c-44ad-8c46-45fe8634c7f9-IMG_20261008_071750.jpg" alt="KreaTon 2" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform" onerror="this.src='https://placehold.co/600x400/102A43/FFFFFF?text=KreaTon+2'">
+                                        <span class="text-[10px] font-medium text-slate-500 mt-2 truncate w-full">[FOTO KREATON 2]</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PENGALAMAN KERJA SECTION (Entricmen Eco bites with 2 photo slots) -->
+        <section id="experience" class="panel-1 py-16 sm:py-20 px-4 sm:px-6 border-b border-slate-200">
+            <div class="max-w-4xl mx-auto space-y-12">
+                <div class="text-center space-y-3 max-w-2xl mx-auto">
+                    <h3 class="text-2xl sm:text-4xl font-extrabold text-[#102A43]">Work Experience</h3>
+                </div>
+
+                <div class="bg-white p-6 sm:p-10 rounded-3xl border border-slate-200 shadow-xl space-y-8 hover:border-[#2B83AA] transition-all">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-6">
+                        <div>
+                            <span class="text-xs font-bold text-[#2B83AA] uppercase tracking-wide">2024 – 2025</span>
+                            <h4 class="text-xl sm:text-2xl font-extrabold text-[#102A43] mt-1">Entricmen Eco bites</h4>
+                        </div>
+                        <span class="px-3.5 py-1.5 bg-[#2B83AA]/10 text-[#2B83AA] text-xs font-bold rounded-full border border-[#2B83AA]/20 self-start sm:self-center">
+                            Entrepreneurship Project
+                        </span>
+                    </div>
+
+                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed bg-slate-50 p-5 sm:p-6 rounded-2xl border border-slate-100 font-medium">
+                        Worked as CMO in a 3-member team through the BINUS Enrichment Program, managing marketing activities and supporting business development for a livestock feed business. Gained hands-on experience in market research, digital marketing, content creation, social media management, sales, and supplier coordination, while strengthening communication, teamwork, problem-solving, and business planning skills.
+                    </p>
+
+                    <div class="space-y-3">
+                        <p class="text-xs font-bold text-[#102A43] uppercase tracking-wider">Experience Documentation:</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div onclick="openPhotoModal('Entricmen Eco bites Documentation 1', 'https://pictureurl.com/api/storage/file?key=u%2Fanon%2Fbd068aef-9698-45b9-9eed-a993e543dcd8-IMG_20261008_074254.png')" class="w-full aspect-[4/3] bg-slate-100 rounded-2xl border border-slate-200 flex flex-col items-center justify-center p-3 text-center cursor-pointer hover:border-[#2B83AA] hover:shadow-md transition-all group overflow-hidden">
+                                <img src="https://pictureurl.com/api/storage/file?key=u%2Fanon%2Fbd068aef-9698-45b9-9eed-a993e543dcd8-IMG_20261008_074254.png" alt="Entricmen Eco bites Photo 1" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform" onerror="this.src='https://placehold.co/600x400/102A43/FFFFFF?text=Entricmen+Eco+bites+1'">
+                                <span class="text-xs font-medium text-slate-500 mt-2 truncate w-full">[FOTO DOKUMENTASI ENTRICMEN ECO BITES 1]</span>
+                            </div>
+                            <div onclick="openPhotoModal('Entricmen Eco bites Documentation 2', 'https://pictureurl.com/api/storage/file?key=u%2Fanon%2F915ab928-8c02-4d3f-a54a-949cbbc1f0d3-IMG_20261008_074625.jpg')" class="w-full aspect-[4/3] bg-slate-100 rounded-2xl border border-slate-200 flex flex-col items-center justify-center p-3 text-center cursor-pointer hover:border-[#2B83AA] hover:shadow-md transition-all group overflow-hidden">
+                                <img src="https://pictureurl.com/api/storage/file?key=u%2Fanon%2F915ab928-8c02-4d3f-a54a-949cbbc1f0d3-IMG_20261008_074625.jpg" alt="Entricmen Eco bites Photo 2" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform" onerror="this.src='https://placehold.co/600x400/102A43/FFFFFF?text=Entricmen+Eco+bites+2'">
+                                <span class="text-xs font-medium text-slate-500 mt-2 truncate w-full">[FOTO DOKUMENTASI ENTRICMEN ECO BITES 2]</span>
+                            </div>
+                            <div onclick="openPhotoModal('Entricmen Eco bites Documentation 3', 'https://pictureurl.com/api/storage/file?key=u%2Fanon%2F78cd20f3-0626-49fe-926e-e8d1d3a50485-IMG_20261008_200551.jpg')" class="w-full aspect-[4/3] bg-slate-100 rounded-2xl border border-slate-200 flex flex-col items-center justify-center p-3 text-center cursor-pointer hover:border-[#2B83AA] hover:shadow-md transition-all group overflow-hidden">
+                                <img src="https://pictureurl.com/api/storage/file?key=u%2Fanon%2F78cd20f3-0626-49fe-926e-e8d1d3a50485-IMG_20261008_200551.jpg" alt="Entricmen Eco bites Photo 2" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform" onerror="this.src='https://placehold.co/600x400/102A43/FFFFFF?text=Entricmen+Eco+bites+2'">
+                                <span class="text-xs font-medium text-slate-500 mt-2 truncate w-full">[FOTO DOKUMENTASI ENTRICMEN ECO BITES 3]</span>
+                            </div>
+                            <div onclick="openPhotoModal('Entricmen Eco bites Documentation 4', 'https://pictureurl.com/api/storage/file?key=u%2Fanon%2F7762d8a2-36c9-44dd-8ae8-2803cb089d41-IMG_20261008_201438.jpg')" class="w-full aspect-[4/3] bg-slate-100 rounded-2xl border border-slate-200 flex flex-col items-center justify-center p-3 text-center cursor-pointer hover:border-[#2B83AA] hover:shadow-md transition-all group overflow-hidden">
+                                <img src="https://pictureurl.com/api/storage/file?key=u%2Fanon%2F7762d8a2-36c9-44dd-8ae8-2803cb089d41-IMG_20261008_201438.jpg" alt="Entricmen Eco bites Photo 2" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform" onerror="this.src='https://placehold.co/600x400/102A43/FFFFFF?text=Entricmen+Eco+bites+2'">
+                                <span class="text-xs font-medium text-slate-500 mt-2 truncate w-full">[FOTO DOKUMENTASI ENTRICMEN ECO BITES 4]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PANEL 4: SKILL & PANEL 5: SOFTWARE & TOOLS -->
+        <section id="skills" class="panel-4 py-16 sm:py-20 px-4 sm:px-6 border-b border-slate-800">
+            <div class="max-w-7xl mx-auto space-y-12">
+                <div class="text-center space-y-3 max-w-2xl mx-auto">
+                    <h2 class="text-xs uppercase tracking-widest text-[#2B83AA] font-bold">Expertise & Competencies</h2>
+                    <h3 class="text-2xl sm:text-4xl font-extrabold text-white">Skills & Tools</h3>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Hard Skills Card -->
+                    <div class="bg-slate-900/80 backdrop-blur-md p-6 sm:p-8 rounded-3xl border border-slate-800 shadow-xl space-y-6">
+                        <div class="flex items-center gap-3 border-b border-slate-800 pb-4">
+                            <div class="w-12 h-12 rounded-2xl bg-[#2B83AA]/20 text-[#2B83AA] flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg sm:text-xl font-extrabold text-white">Hard Skills</h4>
+                                <p class="text-xs text-slate-400">Professional Competencies</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 gap-2.5">
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-[#2B83AA] text-xs flex-shrink-0"></i> Digital Marketing
+                            </div>
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-[#2B83AA] text-xs flex-shrink-0"></i> Social Media Marketing
+                            </div>
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-[#2B83AA] text-xs flex-shrink-0"></i> Business Planning
+                            </div>
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-[#2B83AA] text-xs flex-shrink-0"></i> Business Development
+                            </div>
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-[#2B83AA] text-xs flex-shrink-0"></i> Market Research
+                            </div>
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-[#2B83AA] text-xs flex-shrink-0"></i> Marketing Strategy
+                            </div>
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-[#2B83AA] text-xs flex-shrink-0"></i> Promotional Campaign Management
+                            </div>
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-[#2B83AA] text-xs flex-shrink-0"></i> Supplier Coordination
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills Card -->
+                    <div class="bg-slate-900/80 backdrop-blur-md p-6 sm:p-8 rounded-3xl border border-slate-800 shadow-xl space-y-6">
+                        <div class="flex items-center gap-3 border-b border-slate-800 pb-4">
+                            <div class="w-12 h-12 rounded-2xl bg-[#2B83AA]/20 text-[#2B83AA] flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg sm:text-xl font-extrabold text-white">Soft Skills</h4>
+                                <p class="text-xs text-slate-400">Interpersonal Competencies</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 gap-2.5">
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-[#2B83AA] text-xs flex-shrink-0"></i> Communication
+                            </div>
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-[#2B83AA] text-xs flex-shrink-0"></i> Teamwork
+                            </div>
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-[#2B83AA] text-xs flex-shrink-0"></i> Coordination
+                            </div>
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-[#2B83AA] text-xs flex-shrink-0"></i> Problem Solving
+                            </div>
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-[#2B83AA] text-xs flex-shrink-0"></i> Adaptability
+                            </div>
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-[#2B83AA] text-xs flex-shrink-0"></i> Leadership
+                            </div>
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-[#2B83AA] text-xs flex-shrink-0"></i> Analytical Thinking
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Software & Tools Card with Official Brand Logos -->
+                    <div id="tools" class="bg-slate-900/90 backdrop-blur-md p-6 sm:p-8 rounded-3xl border border-slate-800 shadow-xl space-y-6">
+                        <div class="flex items-center gap-3 border-b border-slate-800 pb-4">
+                            <div class="w-12 h-12 rounded-2xl bg-[#2B83AA]/20 text-[#2B83AA] flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg sm:text-xl font-extrabold text-white">Software & Tools</h4>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 gap-2.5">
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-3">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" class="w-6 h-6 object-contain flex-shrink-0" onerror="this.src='https://placehold.co/24x24/102A43/FFFFFF?text=Ads'">
+                                <span class="truncate">Google Ads</span>
+                            </div>
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-3">
+                                <img src="https://pngimg.com/d/meta_PNG5.png" alt="Meta Business" class="w-6 h-6 object-contain flex-shrink-0" onerror="this.src='https://placehold.co/24x24/102A43/FFFFFF?text=Meta'">
+                                <span class="truncate">Meta Business Suite</span>
+                            </div>
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-3">
+                                <img src="https://logos-world.net/wp-content/uploads/2020/03/Microsoft-Word-Logo.png" alt="MS Office" class="w-6 h-6 object-contain flex-shrink-0" onerror="this.src='https://placehold.co/24x24/102A43/FFFFFF?text=Office'">
+                                <span class="truncate">Microsoft Word</span>
+                            </div>
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-3">
+                                <img src="https://static.vecteezy.com/system/resources/previews/022/100/783/non_2x/microsoft-excel-logo-transparent-free-png.png" alt="MS Office" class="w-6 h-6 object-contain flex-shrink-0" onerror="this.src='https://placehold.co/24x24/102A43/FFFFFF?text=Office'">
+                                <span class="truncate">Microsoft Excel</span>
+                            </div>
+                            <div class="p-3 bg-slate-800/60 rounded-2xl border border-slate-700/60 text-sm font-semibold text-slate-200 flex items-center gap-3">
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/free-canva-icon-svg-download-png-14550998.png?f=webp&w=256" alt="Canva" class="w-6 h-6 object-contain flex-shrink-0" onerror="this.src='https://placehold.co/24x24/102A43/FFFFFF?text=Canva'">
+                                <span class="truncate">Canva</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PANEL 6: CERTIFICATIONS & CONTACT -->
+        <section id="certifications" class="panel-6 py-16 sm:py-24 px-4 sm:px-6 border-t border-slate-200">
+            <div class="max-w-7xl mx-auto space-y-16">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                    <div class="lg:col-span-5 space-y-4 text-center lg:text-left">
+                        <h2 class="text-xs uppercase tracking-widest text-[#2B83AA] font-bold">Credentials</h2>
+                        <h3 class="text-2xl sm:text-4xl font-extrabold text-[#102A43]">CERTIFICATIONS</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                            Completed the Google Ads for Beginners certification from Coursera, gaining foundational knowledge in campaign creation, keyword targeting, ad settings, and digital advertising strategies.
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-7 flex justify-center">
+                        <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-xl w-full max-w-xl space-y-6 hover:border-[#2B83AA] transition-all">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-12 h-12 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center text-[#2B83AA] text-xl shadow-sm flex-shrink-0">
+                                        <i class="fa-solid fa-certificate"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-[11px] sm:text-xs font-bold text-[#2B83AA] tracking-wide uppercase">February 2026</span>
+                                        <h4 class="font-extrabold text-[#102A43] text-base sm:text-lg">Google Ads for Beginners</h4>
+                                    </div>
+                                </div>
+                                <span class="px-3 py-1 bg-[#2B83AA]/10 text-[#2B83AA] text-xs font-bold rounded-full border border-[#2B83AA]/20 self-start sm:self-center">
+                                    Coursera
+                                </span>
+                            </div>
+
+                            <div class="space-y-3">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-slate-400">Relevant Topics & Skills</h5>
+                                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-slate-600">
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-check text-[#2B83AA] mt-1 text-xs flex-shrink-0"></i>
+                                        <span>Campaign creation</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-check text-[#2B83AA] mt-1 text-xs flex-shrink-0"></i>
+                                        <span>Keyword targeting</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-check text-[#2B83AA] mt-1 text-xs flex-shrink-0"></i>
+                                        <span>Ad settings</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-check text-[#2B83AA] mt-1 text-xs flex-shrink-0"></i>
+                                        <span>Google Ads digital marketing strategy</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-slate-50/80 p-4 rounded-2xl border border-slate-200">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-red-50 text-red-600 flex items-center justify-center font-bold text-base shadow-sm flex-shrink-0">
+                                        <i class="fa-solid fa-file-pdf"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-xs sm:text-sm text-[#102A43]">Certificate Document — Google Ads</p>
+                                        <p class="text-[11px] text-slate-500">Verified Digital Credential</p>
+                                    </div>
+                                </div>
+                                <div class="w-full sm:w-auto flex items-center gap-2">
+                                    <button onclick="openPdfModal('Google Ads for Beginners - Certificate', 'https://drive.google.com/file/d/1pDpNHlsWOnZbsIIw8IIjopS_uk9KiQQN/view?usp=sharing')" class="w-full sm:w-auto px-4 py-2.5 bg-[#2B83AA] text-white text-xs font-bold rounded-xl hover:bg-[#236b8c] transition-all shadow-sm flex items-center justify-center gap-2">
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> View Certificate
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div id="contact" class="bg-[#102A43] text-white rounded-3xl p-8 sm:p-12 md:p-16 text-center space-y-8 shadow-2xl relative overflow-hidden mt-16">
+                    <div class="absolute -left-20 -top-20 w-64 h-64 rounded-full bg-[#2B83AA]/20 blur-3xl pointer-events-none"></div>
+                    <div class="max-w-2xl mx-auto space-y-4 relative z-10">
+                        <h3 class="text-2xl sm:text-3xl font-bold">Let's Connect</h3>
+                        <p class="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed">
+                            “Open to opportunities in Marketing, Business Development, Digital Marketing, and Management Trainee roles.”
+                        </p>
+                        <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 pt-4">
+                            <a href="https://www.linkedin.com/in/novia-amel/" target="_blank" rel="noopener noreferrer" class="px-4 sm:px-5 py-3 rounded-xl bg-white/10 hover:bg-[#2B83AA] transition-all text-white flex items-center gap-2 text-xs sm:text-sm font-medium border border-white/10">
+                                <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                            </a>
+                            <a href="https://mail.google.com/mail/?view=cm&to=noviaamelfentatasyaputri%40gmail.com" class="px-4 sm:px-5 py-3 rounded-xl bg-white/10 hover:bg-[#2B83AA] transition-all text-white flex items-center gap-2 text-xs sm:text-sm font-medium border border-white/10">
+                                <i class="fa-solid fa-envelope"></i> Email
+                            </a>
+                            <a href="https://www.instagram.com/amelfenta/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" class="px-4 sm:px-5 py-3 rounded-xl bg-white/10 hover:bg-[#2B83AA] transition-all text-white flex items-center gap-2 text-xs sm:text-sm font-medium border border-white/10">
+                                <i class="fa-brands fa-instagram"></i> Instagram
+                            </a>
+                            <a href="https://wa.me/628885779697" target="_blank" rel="noopener noreferrer" class="px-4 sm:px-5 py-3 rounded-xl bg-white/10 hover:bg-[#2B83AA] transition-all text-white flex items-center gap-2 text-xs sm:text-sm font-medium border border-white/10">
+                                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#0B1D30] text-slate-400 py-8 px-6 text-center text-xs border-t border-white/10">
+        <p>© 2026 Novia Amel Fenta Tasya Putri. All rights reserved.</p>
+    </footer>
+
+    <!-- PDF Viewer Modal -->
+    <div id="pdf-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 space-y-6 shadow-2xl relative text-slate-800 text-center">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-4">
+                <h4 id="pdf-modal-title" class="font-bold text-base text-[#102A43]">Academic Document</h4>
+                <button onclick="closePdfModal()" class="text-slate-500 hover:text-slate-800 p-2" aria-label="Close Modal">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            <div class="py-6 space-y-4">
+                <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto text-[#2B83AA] text-2xl">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </div>
+                <p id="pdf-modal-status" class="text-sm text-slate-600 font-medium">
+                    Opening document in secure view...
+                </p>
+            </div>
+            <div class="flex justify-center">
+                <button onclick="closePdfModal()" class="px-6 py-2.5 bg-[#2B83AA] text-white text-xs font-bold rounded-xl hover:bg-[#236b8c] transition-all">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photo Zoom Modal -->
+    <div id="photo-modal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-2xl w-full p-6 space-y-4 shadow-2xl relative text-slate-800">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-4">
+                <h4 id="photo-modal-title" class="font-bold text-lg text-[#102A43]">Dokumentasi Kegiatan</h4>
+                <button onclick="closePhotoModal()" class="text-slate-500 hover:text-slate-800 p-2" aria-label="Close Modal">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            <div class="w-full max-h-[70vh] bg-slate-900 rounded-2xl overflow-hidden flex items-center justify-center p-2">
+                <img id="photo-modal-img" src="" alt="Zoomed Photo" class="w-auto h-auto max-w-full max-h-[65vh] object-contain" onerror="this.src='https://placehold.co/800x500/102A43/FFFFFF?text=Preview+Photo'">
+            </div>
+            <p class="text-xs text-slate-500 text-center">Foto dokumentasi kegiatan dapat diganti dengan file foto asli Anda.</p>
+            <div class="flex justify-end">
+                <button onclick="closePhotoModal()" class="px-5 py-2.5 bg-[#2B83AA] text-white text-xs font-bold rounded-xl hover:bg-[#236b8c] transition-all">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Scroll pop-up effect for profile photo
+        const profileCard = document.getElementById('profile-popup-card');
+        const eduCards = document.querySelectorAll('.edu-card-item');
+
+        const observerOptions = {
+            root: null,
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.target === profileCard && entry.isIntersecting) {
+                    profileCard.classList.remove('scale-50', 'opacity-0');
+                    profileCard.classList.add('scale-100', 'opacity-100');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        if (profileCard) {
+            observer.observe(profileCard);
+        }
+
+        const eduObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    eduCards.forEach((card, index) => {
+                        setTimeout(() => {
+                            card.classList.remove('opacity-0', 'translate-y-6');
+                            card.classList.add('opacity-100', 'translate-y-0');
+                        }, index * 200);
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        const eduSection = document.getElementById('education');
+        if (eduSection) {
+            eduObserver.observe(eduSection);
+        }
+
+        // PDF Modal functionality
+        const pdfModal = document.getElementById('pdf-modal');
+        const pdfModalTitle = document.getElementById('pdf-modal-title');
+        const pdfModalStatus = document.getElementById('pdf-modal-status');
+
+        function openPdfModal(title, url) {
+            pdfModalTitle.textContent = title;
+            pdfModalStatus.textContent = "Opening document...";
+            pdfModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            window.open(url, '_blank');
+        }
+        function closePdfModal() {
+            pdfModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Photo Zoom Modal functionality
+        const photoModal = document.getElementById('photo-modal');
+        const photoModalTitle = document.getElementById('photo-modal-title');
+        const photoModalImg = document.getElementById('photo-modal-img');
+
+        function openPhotoModal(title, imgSrc) {
+            photoModalTitle.textContent = title;
+            photoModalImg.src = imgSrc;
+            photoModal.classList.add('hidden'); // reset if needed
+            photoModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        function closePhotoModal() {
+            photoModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        window.addEventListener('click', (e) => {
+            if (e.target === pdfModal) {
+                closePdfModal();
+            }
+            if (e.target === photoModal) {
+                closePhotoModal();
+            }
+        });
+    </script>
+</body>
+</html>
